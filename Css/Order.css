@@ -1,0 +1,234 @@
+* {
+    background: #F1EFE7;
+    margin: 0;
+    padding: 0;
+}
+
+body, ul, li, a, p, span, i::before {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    background: none;
+}
+/*--==================== HEADER ====================--*/
+
+.Magnifying {
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.nome-do-site {
+    font-family: League Spartan;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+.pesquisar {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
+}
+.input-pesquisa {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #D9D9D9;
+    border-radius: 16px;
+}
+
+.input-pesquisa i::before {
+    color: #404244;
+    cursor: pointer;
+    font-size: 23px;
+    background: #D9D9D9;
+}
+
+.input-pesquisa input {
+    background-color: #D9D9D9;
+    border: none;
+    color: #424242;
+    font-size: 20px;
+}
+
+.bell {
+    cursor: pointer;
+}
+
+.bell i::before{
+    font-size: 50px;
+}
+
+.input-pesquisa input:focus-visible {
+    outline: none;
+}
+/*--==================== HEADER ====================--*/
+
+/*--==================== NAV ====================--*/
+.box-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 80px;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.box-nav i::before {
+    font-size: 40px;
+    color: black;
+    
+}
+/*--==================== NAV ====================--*/
+
+/*--==================== MAIN ====================--*/
+main {
+    display: flex;
+    margin-left: 400px;
+}
+/*--==================== MAIN ====================--*/
+
+/*--==================== PRODUTOS ====================--*/
+/* Estilos do Grid */
+.container__principal {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    font-family: League Spartan;
+}
+
+.container__principal img {
+    max-width: 330px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.drink__customization {
+    display: flex;
+    width: 498px;
+    height: 524px;
+    border-radius: 10px 0px 10px 10px;
+    background: #D9D9D9;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.drink__customization h1, h2, option, label {
+    margin: 20px 0px 0px 20px;
+    background: none;
+}
+
+.option {
+    padding-left: 10px;
+    display: flex;
+    width: 448px;
+    height: 45px;
+    border-radius: 10px 0px 10px 10px;
+    border: 1px solid #292929;
+    background: #B3B3B3;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option input {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(131, 130, 130); /* Define o contorno preto */
+    border-radius: 50%; /* Mantém a forma circular */
+    background-color: rgb(255, 255, 255); /* Fundo branco */
+    position: relative;
+}
+  
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(71, 71, 71); /* Centro preto ao selecionar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.drink__description {
+    display: flex;
+    width: 592px;
+    height: 120px;
+    border-radius: 10px 0px 10px 10px;
+    background: #D9D9D9;
+    align-items: center;
+    font-weight: 400;
+}
+
+.drink__description p {
+    margin: 0px 10px 0px 10px;
+}
+
+.add__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 498px;
+    height: 50px;
+    border-radius: 10px 1px 10px 10px;
+    border: 1px solid #737373;
+    background: #D9D9D9;
+}
+
+.price {
+    margin-left: 10px;
+}
+
+.add__to__cart {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #737373;
+    background: linear-gradient(90deg, #969696 92.12%, #303030 121.62%);
+}
+/*--==================== PRODUTOS ====================--*/
+
+/*--==================== Footer ====================--*/
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.Footer-copy {
+    margin-bottom: 25px;
+}
+
+.social-footer {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.social-footer i::before {
+    font-size: 40px;
+    margin-left: 15px;
+}
+/*--==================== Footer ====================--*/

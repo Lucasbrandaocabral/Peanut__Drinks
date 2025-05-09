@@ -1,0 +1,188 @@
+* {
+    background: #F1EFE7;
+    margin: 0;
+    padding: 0;
+}
+
+html body button.prev {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+
+body, ul, li, a, p, span, i::before {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    background: none;
+}
+/*--==================== HEADER ====================--*/
+
+#search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.nome-do-site {
+    font-family: League Spartan;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+.pesquisar {
+    display: flex;
+    gap: 50px;
+}
+.input-pesquisa {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #D9D9D9;
+    border-radius: 16px;
+}
+
+.input-pesquisa i::before {
+    color: #404244;
+    cursor: pointer;
+    font-size: 23px;
+    background: #D9D9D9;
+}
+
+.input-pesquisa input {
+    background-color: #D9D9D9;
+    border: none;
+    color: #424242;
+    font-size: 20px;
+}
+
+.bell {
+    cursor: pointer;
+}
+
+.bell i::before{
+    font-size: 50px;
+}
+
+.input-pesquisa input:focus-visible {
+    outline: none;
+}
+/*--==================== HEADER ====================--*/
+
+/*--==================== NAV ====================--*/
+.box-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 80px;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.box-nav i::before {
+    font-size: 40px;
+    color: black;
+    
+}
+/*--==================== NAV ====================--*/
+
+/*--==================== MAIN ====================--*/
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+    align-items: center;
+    font-family: League Spartan;
+}
+
+.personal-data input {
+    padding: 15px 200px;
+    width: 250px;
+    padding-left: 15px;
+    align-items: center;
+    background: #D9D9D9;
+    border-radius: 16px 0px 16px 16px;
+    border: none;
+}
+
+.container-information {
+    margin-top: 5px;
+    margin-top: 100px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.container-information h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.photo-user {
+    margin-right: 400px;
+}
+
+.lucas {
+    margin-top: 20px;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo p {
+    font-weight: 800;
+}
+.save {
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+    margin-top: 50px;
+    font-family: League Spartan;
+    font-weight: 400;
+    text-align: center;
+}
+
+.save a {
+    width: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #969696 92.12%, #303030 121.62%);
+}
+/*--==================== MAIN ====================--*/
+
+/*--==================== Footer ====================--*/
+footer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.Footer-copy {
+    margin-bottom: 25px;
+}
+
+.social-footer {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.social-footer i::before {
+    font-size: 40px;
+    margin-left: 15px;
+}
+/*--==================== Footer ====================--*/
