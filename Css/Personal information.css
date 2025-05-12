@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f1f1f7;
+    background: #F1EFE7;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -12,7 +12,6 @@ body, ul, li, a, p, span, i::before {
     list-style: none;
     text-decoration: none;
     font-size: 20px;
-    background: none;
 }
 /*--==================== HEADER ====================--*/
 
@@ -73,13 +72,28 @@ body, ul, li, a, p, span, i::before {
 
 /*--==================== NAV ====================--*/
 .box-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #fff;
+    z-index: 1000;
+    border-top: 1px solid #ccc;
+    flex-direction: row;
+}
+
+.home-ir-para {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    gap: 80px;
     align-items: center;
-    margin-top: 150px;
-    margin-left: 30px;
+}
+
+.category__nav {
+    display: block;
 }
 
 .box-nav i::before {
@@ -180,3 +194,36 @@ footer {
     margin-left: 15px;
 }
 /*--==================== Footer ====================--*/
+
+/*--==================== responsivo ====================--*/
+
+@media (min-width: 1024px) {
+
+    .box-nav {
+    position: fixed;
+    top: 270px;
+    left: 30px;
+    bottom: auto;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 80px;
+    background: none;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: none;
+  }
+
+  .box-nav i::before {
+    font-size: 40px;
+  }
+
+  .category__nav {
+    display: none;
+  }
+
+
+}
+
+/*--==================== responsivo ====================--*/
