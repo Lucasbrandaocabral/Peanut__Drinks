@@ -1,7 +1,10 @@
 * {
-    background: #F1EFE7;
     margin: 0;
     padding: 0;
+}
+
+body {
+  background-color: #f1f1f7;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -9,6 +12,7 @@ body, ul, li, a, p, span, i::before {
     list-style: none;
     text-decoration: none;
     font-size: 20px;
+    background: none;
 }
 /*--==================== HEADER ====================--*/
 
@@ -144,7 +148,7 @@ main h2 {
     height: 100%;
     object-fit: cover;
     transition: filter 0.3s ease;
-    filter: brightness(10%)
+    filter: brightness(5%)
 }
   
 .box:hover img {

@@ -1,17 +1,11 @@
 * {
-    background: #F1EFE7;
     margin: 0;
     padding: 0;
 }
 
-html body button.prev {
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-
+body {
+  background-color: #f1f1f7;
 }
-
 
 body, ul, li, a, p, span, i::before {
     color: black;
