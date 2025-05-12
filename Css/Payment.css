@@ -97,7 +97,8 @@ body, ul, li, a, p, span, i::before {
 
 /*--==================== MAIN ====================--*/
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-left: 450px;
     font-family: "League Spartan";
     align-items: center;
@@ -111,6 +112,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-top: 80px;
 }
 
 .payment__option {
@@ -254,9 +256,30 @@ input[type="radio"]:checked::before {
 }
 /*--==================== card__preview ====================--*/
 
+/*--==================== box__buy ====================--*/
+
+.box__buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px 1px 10px 10px;
+    border: 1px solid #737373;
+    background: #D9D9D9;
+    height: 50px;
+}
+
+.buy {
+    padding: 9px 25px 9px 25px;
+    border-radius: 10px 0px 10px 10px;
+    border: 1px solid #737373;
+    background: linear-gradient(90deg, #969696 92.12%, #303030 121.62%);
+}
+
+/*--==================== box__buy ====================--*/
+
 /*--==================== Footer ====================--*/
 footer {
-    margin-top: 30px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
