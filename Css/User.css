@@ -205,4 +205,20 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+
+    .pesquisar {
+        gap: 15px;
+    }
+
+    .bell i::before {
+        font-size: 40px;
+    }
+
+    .nome-do-site {
+    display: none;
+  }
+
+}
+
 /*--==================== responsivo ====================--*/

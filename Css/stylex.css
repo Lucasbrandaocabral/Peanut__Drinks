@@ -110,6 +110,10 @@ body, ul, li, a, p, span, i::before {
 /*--==================== NAV ====================--*/
 
 /*--==================== Product ====================--*/
+main {
+    font-family: League Spartan;
+}
+
 .product {
     position: relative;
     overflow: hidden;
@@ -186,7 +190,6 @@ body, ul, li, a, p, span, i::before {
 .product-info {
     width: 150px;
     height: 150px;
-    font-family: League Spartan;
     display: flex;
     flex-direction: column;
 }
