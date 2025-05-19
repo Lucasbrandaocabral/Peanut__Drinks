@@ -5,6 +5,7 @@
 
 body {
     background: #F1EFE7;
+    font-family: League Spartan;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -25,7 +26,6 @@ body, ul, li, a, p, span, i::before {
 }
 
 .nome-do-site {
-    font-family: League Spartan;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
@@ -109,6 +109,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
+    margin-bottom: 80px;
 }
 
 /*--==================== MAIN ====================--*/
@@ -119,14 +121,10 @@ main {
     display: flex;
     align-items: center;
     gap: 580px;
-    
-}
-.titolo-total h2 {
-    font-family: League Spartan;
+    flex-direction: row;
 }
 
 .card {
-    font-family: League Spartan;
     display: grid;
     grid-template-columns: repeat(4, 0fr);
     grid-auto-rows: auto; /* altura de cada linha (você ajusta) */
@@ -143,9 +141,6 @@ main {
     background: #D9D9D9;
 }
 /*--==================== Titolo-descrição-preço ====================--*/
-.box-img {
-    background: none;
-}
 .box-img img{
     border-radius: 10px;
 }
@@ -177,15 +172,9 @@ main {
     font-weight: 600;
     margin-bottom: 90px;
     margin-right: 30px;
-    font-family: League Spartan;
-}
-
-.fa-solid {
-    background: none !important;
 }
 
 .mais-menos i::before {
-    background: none;
     font-size: 15px;
     cursor: pointer;
 }
@@ -219,18 +208,14 @@ main {
     padding: 10px;
     border: 1px solid #737373;
     background: #D9D9D9;
-    font-family: League Spartan;
 }
 
 .payment {
-    background: none;
     font-size: 20px;
 }
 
 .botao {
-    background: none;
     font-weight: 400;
-    font-family: League Spartan;
     font-size: 30px;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
@@ -241,14 +226,14 @@ main {
 
 /*--==================== Footer ====================--*/
 footer {
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
 
 .Footer-copy {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .social-footer {
@@ -275,11 +260,11 @@ footer {
     width: auto;
     height: auto;
     gap: 80px;
-    background: none;
     padding: 0;
     align-items: center;
     justify-content: flex-start;
     border-top: none;
+    background: none;
   }
 
   .box-nav i::before {
@@ -289,7 +274,6 @@ footer {
   .category__nav {
     display: none;
   }
-
 
 }
 
@@ -306,6 +290,45 @@ footer {
 
     .nome-do-site {
     display: none;
+  }
+
+  .titolo-total {
+    display: flex;
+    font-size: 15px;
+    gap: 150px;
+    text-align: center;
+  }
+
+  .titolo-descricao {
+    width: 100%;
+  }
+
+  .descricao {
+    display: none;
+  }
+
+  .descricao__mobile {
+    display: block;
+    font-size: 14px;
+  }
+
+  .preco {
+    margin: 0;
+    text-align: center;
+  }
+
+  .Confirm {
+    margin: 20px auto;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .payment {
+    font-size: 19px;
+  }
+
+  .botao {
+    font-size: 24px;
   }
 
 }

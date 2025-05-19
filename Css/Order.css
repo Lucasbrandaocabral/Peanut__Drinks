@@ -5,6 +5,7 @@
 
 body {
     background: #F1EFE7;
+    font-family: League Spartan;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -30,7 +31,6 @@ body, ul, li, a, p, span, i::before {
 }
 
 .nome-do-site {
-    font-family: League Spartan;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
@@ -112,7 +112,7 @@ body, ul, li, a, p, span, i::before {
 /*--==================== MAIN ====================--*/
 main {
     display: flex;
-    margin-left: 400px;
+    justify-content: space-around;
 }
 /*--==================== MAIN ====================--*/
 
@@ -120,38 +120,36 @@ main {
 /* Estilos do Grid */
 .container__principal {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 37% 1fr;
     gap: 30px;
     justify-content: center;
     align-items: start;
-    padding: 2rem;
-    font-family: League Spartan;
+    padding: 0 15vw;
 }
 
 .container__principal img {
-    max-width: 730px;
+    max-width: 90%;
 }
 
 .drink__customization {
     display: flex;
-    width: 498px;
-    height: 524px;
+    padding: 10px;
+    width: 90%;
     border-radius: 10px 0px 10px 10px;
     background: #D9D9D9;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
 }
 
 .drink__customization h1, h2, option, label {
-    margin: 20px 0px 0px 20px;
-    background: none;
+    padding: 5px;
 }
 
 .option {
     padding-left: 10px;
     display: flex;
-    width: 448px;
-    height: 45px;
+    width: 95%;
     border-radius: 10px 0px 10px 10px;
     border: 1px solid #292929;
     background: #B3B3B3;
@@ -190,8 +188,8 @@ input[type="radio"]:checked::before {
   
 .drink__description {
     display: flex;
-    width: 730px;
-    height: 120px;
+    padding: 5px;
+    max-width: 90%;
     border-radius: 10px 0px 10px 10px;
     background: #D9D9D9;
     align-items: center;
@@ -206,8 +204,8 @@ input[type="radio"]:checked::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 498px;
-    height: 50px;
+    max-width: 100%;
+    padding: 5px;
     border-radius: 10px 1px 10px 10px;
     border: 1px solid #737373;
     background: #D9D9D9;
@@ -277,9 +275,7 @@ footer {
     display: none;
   }
 
-
 }
-
 
 @media (max-width: 768px) {
 
@@ -294,6 +290,7 @@ footer {
     .nome-do-site {
     display: none;
   }
+
 
 }
 
