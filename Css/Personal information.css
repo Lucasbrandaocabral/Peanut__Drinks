@@ -104,7 +104,8 @@ body, ul, li, a, p, span, i::before {
 /*--==================== NAV ====================--*/
 
 /*--==================== MAIN ====================--*/
-main {
+.grid-container {
+    padding: 0 20vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: end;
@@ -114,7 +115,7 @@ main {
 
 .personal-data input {
     padding: 15px 200px;
-    width: 250px;
+    width: 50%;
     padding-left: 15px;
     align-items: center;
     background: #D9D9D9;
@@ -123,9 +124,6 @@ main {
 }
 
 .container-information {
-    margin-top: 5px;
-    margin-top: 100px;
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -136,10 +134,6 @@ main {
 .container-information h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-}
-
-.photo-user {
-    margin-right: 400px;
 }
 
 .lucas {
@@ -157,14 +151,10 @@ main {
 .save {
     display: flex;
     justify-content: center;
-    margin-right: 150px;
-    margin-top: 50px;
     font-family: League Spartan;
     font-weight: 400;
     text-align: center;
-}
-
-.save a {
+    margin-top: 20px;
     width: 100px;
     padding: 15px;
     border-radius: 10px;
@@ -223,7 +213,6 @@ footer {
     display: none;
   }
 
-
 }
 
 @media (max-width: 768px) {
@@ -238,6 +227,19 @@ footer {
 
     .nome-do-site {
     display: none;
+  }
+
+  .grid-container {
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .personal-data input {
+    width: auto;
   }
 
 }
