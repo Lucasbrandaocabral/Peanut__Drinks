@@ -127,7 +127,7 @@ main {
 .card {
     display: grid;
     grid-template-columns: repeat(4, 0fr);
-    grid-auto-rows: auto; /* altura de cada linha (você ajusta) */
+    grid-auto-rows: auto;
     gap: 10px;
     padding: 10px;
     justify-content: space-between;

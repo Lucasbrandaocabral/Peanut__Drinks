@@ -9,6 +9,7 @@ body, html {
 
 body {
     background: #F1EFE7;
+    font-family: League Spartan;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -30,7 +31,6 @@ body, ul, li, a, p, span, i::before {
 }
 
 .nome-do-site {
-    font-family: League Spartan;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
@@ -110,9 +110,6 @@ body, ul, li, a, p, span, i::before {
 /*--==================== NAV ====================--*/
 
 /*--==================== Product ====================--*/
-main {
-    font-family: League Spartan;
-}
 
 .product {
     position: relative;

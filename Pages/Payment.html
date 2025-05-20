@@ -69,8 +69,7 @@
         </nav>
     </header>
     <!--=================Header Nav=================-->
-    <main style="
-    width: 1000px;">
+    <main>
     <!--=================Main=================-->
         <!--=================Card=================-->
         <section class="payment__container">
@@ -82,10 +81,12 @@
                 </label>
             </div>
             <div class="payment__option__selected">
-                <h3>MasterCard</h3>
+                <div class="mastercard">
+                    <h3>MasterCard</h3>
                 <label>
-                    <input type="radio" name="payment" value="mastercard" checked style="left: 460px;bottom: 25px;">
+                    <input type="radio" name="payment" value="mastercard" checked>
                 </label>
+                </div>
                 <div class="card__form">
                     <h4 style="background: none;">Número do cartão</h4>
                     <label>
@@ -119,6 +120,14 @@
                     <input type="radio" name="payment" value="pix">
                 </label>
             </div>
+            <div class="box__buy">
+                <h2 class="total">
+                Purchase total: R$52,⁹⁴
+            </h2>
+            <a href="#" class="buy">
+                Buy
+            </a>
+            </div>
         </section>
         <section class="card__preview">
             <h3 class="name__card">Platinum</h3>
@@ -133,14 +142,6 @@
             <div class="logo">
                 <img src="../IMG/Payment/mastercard.png">
             </div>
-        </section>
-        <section class="box__buy">
-            <h2 class="total">
-                Purchase total: R$52,⁹⁴
-            </h2>
-            <a href="#" class="buy">
-                Buy
-            </a>
         </section>
         <!--=================Card=================-->
     <!--=================Main=================-->
