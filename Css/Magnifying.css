@@ -5,6 +5,7 @@
 
 body {
     background: #F1EFE7;
+    font-family: League Spartan;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -30,7 +31,6 @@ body, ul, li, a, p, span, i::before {
 }
 
 .nome-do-site {
-    font-family: League Spartan;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
@@ -131,7 +131,7 @@ main {
     gap: 15px;
     padding: 10px;
     justify-items: center;
-    grid-auto-rows: auto; /* altura de cada */
+    grid-auto-rows: auto;
     justify-content: center;
 }
   
@@ -143,7 +143,7 @@ main {
     border-radius: 10px;
     opacity: 0.9;
     transition: transform 0.3s ease;
-    background-color: #333; /* fallback caso a imagem não carregue */
+    background-color: #333;
 }
   
 .box:hover {

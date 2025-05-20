@@ -5,6 +5,7 @@
 
 body {
     background: #F1EFE7;
+    font-family: League Spartan;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -25,7 +26,6 @@ body, ul, li, a, p, span, i::before {
 }
 
 .nome-do-site {
-    font-family: League Spartan;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
@@ -110,7 +110,6 @@ body, ul, li, a, p, span, i::before {
     grid-template-columns: repeat(2, 1fr);
     justify-items: end;
     align-items: center;
-    font-family: League Spartan;
 }
 
 .personal-data input {
@@ -151,7 +150,6 @@ body, ul, li, a, p, span, i::before {
 .save {
     display: flex;
     justify-content: center;
-    font-family: League Spartan;
     font-weight: 400;
     text-align: center;
     margin-top: 20px;

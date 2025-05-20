@@ -5,6 +5,7 @@
 
 body {
     background: #F1EFE7;
+    font-family: League Spartan;
 }
 
 body, ul, li, a, p, span, i::before {
@@ -25,7 +26,6 @@ body, ul, li, a, p, span, i::before {
 }
 
 .nome-do-site {
-    font-family: League Spartan;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
@@ -110,7 +110,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    font-family: League Spartan;
 }
 
 .grid-user {
@@ -151,10 +150,11 @@ main {
 
 /*--==================== Footer ====================--*/
 footer {
-    margin-top: 300px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .Footer-copy {

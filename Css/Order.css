@@ -129,6 +129,7 @@ main {
 
 .container__principal img {
     max-width: 90%;
+    display: none;
 }
 
 .drink__customization {
@@ -140,6 +141,14 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+}
+
+.desktop {
+    display: none;
+}
+
+.description__mobile {
+    display: block;
 }
 
 .drink__customization h1, h2, option, label {
@@ -163,13 +172,14 @@ main {
     height: 25px;
 }
 
+
 input[type="radio"] {
     appearance: none;
     width: 30px;
     height: 30px;
-    border: 2px solid rgb(131, 130, 130); /* Define o contorno preto */
-    border-radius: 50%; /* Mantém a forma circular */
-    background-color: rgb(255, 255, 255); /* Fundo branco */
+    border: 2px solid rgb(131, 130, 130);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
     position: relative;
 }
   
@@ -179,7 +189,7 @@ input[type="radio"]:checked::before {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgb(71, 71, 71); /* Centro preto ao selecionar */
+    background-color: rgb(71, 71, 71); 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -275,9 +285,25 @@ footer {
     display: none;
   }
 
+  #mobile__img {
+    display: none;
+  }
+  
+  .container__principal img {
+    display: block;
+  }
+
+  .desktop {
+    display: block;
 }
 
-@media (max-width: 768px) {
+.description__mobile {
+    display: none;
+}
+  
+}
+
+@media (max-width: 1023px) {
 
     .pesquisar {
         gap: 15px;
@@ -291,6 +317,20 @@ footer {
     display: none;
   }
 
+  #mobile__img {
+    display: block;
+  }
+
+  .container__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .add__card { 
+    width: 89%;
+  }
 
 }
 
