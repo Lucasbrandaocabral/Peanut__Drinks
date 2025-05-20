@@ -1,7 +1,7 @@
 ## 🚀 Loja de Bebidas - Projeto Pessoal 🍹
 
 ## 🥜 Peanut Drinks
-Projeto pessoal de uma landing page responsiva para uma marca fictícia de bebidas vegetais. Este é meu primeiro projeto criado totalmente do zero, com foco em responsividade e na aplicação das melhores práticas de organização dentro do que conheço sobre arquitetura de sites. Ainda tenho muito a melhorar e continuo aprendendo para aprimorar minhas habilidades.
+Projeto pessoal de uma landing page responsiva para uma marca fictícia de bebidas. Este é meu primeiro projeto criado totalmente do zero, com foco em responsividade e na aplicação das melhores práticas de organização dentro do que conheço sobre arquitetura de sites. Ainda tenho muito a melhorar e continuo aprendendo para aprimorar minhas habilidades.
 
 ## 🧠 Motivação
 Esse projeto surgiu como um desafio pessoal para colocar em prática o que venho aprendendo sobre desenvolvimento web. Queria testar minha capacidade de criar uma landing page com HTML, CSS e JavaScript de forma organizada e funcional.
