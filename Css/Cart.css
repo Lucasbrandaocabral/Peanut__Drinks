@@ -193,6 +193,11 @@ main {
     background: linear-gradient(270deg, #B3B3B3 0%, #737373 100%);
 }
 
+  .counter__mobile {
+    display: none;
+}
+
+
 /*--==================== Titolo-descrição-preço ====================--*/
 
 /*--==================== Confirm ====================--*/
@@ -275,8 +280,16 @@ footer {
     display: none;
   }
 
+  .counter__mobile {
+    display: none;
+    }
+
 }
 
+@media (min-width: 1020px) {
+
+
+}
 
 @media (max-width: 768px) {
 
@@ -289,48 +302,79 @@ footer {
     }
 
     .nome-do-site {
-    display: none;
-  }
+        display: none;
+    }
 
-  .titolo-total {
-    display: flex;
-    font-size: 15px;
-    gap: 150px;
-    text-align: center;
-  }
+    .titolo-total {
+        display: flex;
+        font-size: 15px;
+        gap: 150px;
+        text-align: center;
+    }
 
-  .titolo-descricao {
-    width: 100%;
-  }
+    .titolo-descricao {
+        width: 100%;
+    }
 
-  .descricao {
-    display: none;
-  }
+    .descricao {
+        display: none;
+    }
 
-  .descricao__mobile {
-    display: block;
-    font-size: 14px;
-  }
+    .descricao__mobile {
+        display: block;
+        font-size: 14px;
+    }
 
-  .preco {
-    margin: 0;
-    text-align: center;
-  }
+    .preco {
+        margin: 0;
+        text-align: center;
+    }
 
-  .Confirm {
-    margin: 20px auto;
-    width: 90%;
-    gap: 20px;
-  }
+    .Confirm {
+        margin: 20px auto;
+        width: 90%;
+        gap: 20px;
+    }
 
-  .payment {
-    font-size: 19px;
-  }
+    .payment {
+        font-size: 19px;
+    }
 
-  .botao {
-    font-size: 24px;
-  }
+    .botao {
+        font-size: 24px;
+    }
+    
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .counter__mobile {
+        width: 100%;
+        padding: 2px;
+        gap: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px 1px 10px 10px;
+        border: 1px solid #C7C7C7;
+        background: linear-gradient(270deg, #B3B3B3 0%, #737373 100%);
+    }
+    .counter__mobile i::before, p {
+        font-size: 15px;
+    }
+
+    .counter {
+        display: none;
+    }
+
+    .preco {
+        gap: 90px;
+        display: flex;
+        margin: 0;        
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
-
 /*--==================== responsivo ====================--*/
