@@ -35,10 +35,14 @@
     '.pd26-veil{position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;',
     'align-items:center;justify-content:center;gap:14px;background:#100e0b;color:#f5f2ea;',
     'opacity:0;animation:pd26-in .28s ease forwards}',
+    // O CSS de 2025 tem "span,p{font-size:20px;color:black}" global, que
+    // vazaria para dentro do overlay. Este reset isola o que é de 2026.
+    '.pd26-veil *{font-size:inherit;color:inherit;margin:0;padding:0}',
     '.pd26-year{font-family:"League Spartan",Inter,system-ui,sans-serif;font-weight:800;',
     'font-size:clamp(56px,12vw,104px);line-height:1;font-variant-numeric:tabular-nums}',
     '.pd26-year span{display:block;animation:pd26-up .5s cubic-bezier(.22,1,.36,1) forwards}',
-    '.pd26-note{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.6}',
+    '.pd26-note{font-size:13px;color:#f5f2ea;letter-spacing:.08em;',
+    'text-transform:uppercase;opacity:.6}',
     '@keyframes pd26-in{to{opacity:1}}',
     '@keyframes pd26-up{from{transform:translateY(60%);opacity:0}to{transform:translateY(0);opacity:1}}',
     '@media (prefers-reduced-motion:reduce){.pd26-veil,.pd26-year span{animation:none;opacity:1}}',
