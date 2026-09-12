@@ -32,3 +32,6 @@ Thumbs.db
 .cache
 .temp
 node_modules/.tmp
+
+# cache do Vite
+.vite
