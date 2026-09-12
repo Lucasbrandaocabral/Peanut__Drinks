@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { Home, LayoutGrid, ShoppingCart, User } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { useCart } from '@/store/cart'
+import { LegacyPortal } from './LegacyPortal'
 
 interface Destination {
   to: string
@@ -56,6 +57,16 @@ export function NavBar() {
             </NavLink>
           </li>
         ))}
+
+        {/* Separado do resto: não é uma seção do app, e sim a saída para a
+            versão de 2025. */}
+        <li
+          aria-hidden
+          className="mx-1 h-8 w-px shrink-0 bg-line lg:mx-0 lg:my-1 lg:h-px lg:w-8"
+        />
+        <li className="flex-none">
+          <LegacyPortal />
+        </li>
       </ul>
     </nav>
   )
