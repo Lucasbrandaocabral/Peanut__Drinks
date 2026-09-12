@@ -32,6 +32,9 @@ jobs:
       - name: Configurar o Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # Troca a origem do Pages de "branch" para "GitHub Actions".
+          enablement: true
 
       - name: Build
         # O site fica em /Peanut__Drinks/, então o base precisa acompanhar.
