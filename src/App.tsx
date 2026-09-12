@@ -29,7 +29,8 @@ export default function App() {
   return (
     <ThemeProvider>
       <CartProvider>
-        <BrowserRouter>
+        {/* basename acompanha o base do Vite: "/" local, "/Peanut__Drinks/" no Pages. */}
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Suspense fallback={<RouteFallback />}>
             <Routes>
               <Route element={<AppLayout />}>

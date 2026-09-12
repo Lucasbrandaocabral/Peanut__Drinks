@@ -9,6 +9,7 @@ import {
   UserRound,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import { asset } from '@/lib/asset'
 import { usePageTitle } from '@/hooks/usePageTitle'
 
 interface Entry {
@@ -42,7 +43,7 @@ export default function Profile() {
       <div className="grid items-start gap-6 lg:grid-cols-[18rem_1fr]">
         <section className="flex flex-col items-center gap-2 rounded-[var(--radius-card)] border border-line bg-raised p-6 text-center shadow-soft">
           <img
-            src="/img/user/lucas-b.webp"
+            src={asset('/img/user/lucas-b.webp')}
             alt=""
             width={96}
             height={96}

@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset'
 import type { CategorySlug, Product } from '@/types'
 
 type Seed = Omit<Product, 'id' | 'slug'> & { slug?: string }
@@ -17,6 +18,7 @@ const build = (seeds: Seed[]): Product[] =>
     ...seed,
     id: String(index + 1).padStart(3, '0'),
     slug: seed.slug ?? toSlug(seed.name),
+    image: asset(seed.image),
   }))
 
 const COCKTAIL_VOLUMES = [300, 500]

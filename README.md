@@ -5,6 +5,8 @@ JavaScript puro — meu primeiro projeto feito inteiramente do zero. Em 2026 ree
 + TypeScript**, mantendo a identidade visual original e a versão antiga no repositório para
 comparação.
 
+**[🔗 Ver o projeto ao vivo](https://lucasbrandaocabral.github.io/Peanut__Drinks/)** · [ver a versão antiga](https://lucasbrandaocabral.github.io/Peanut__Drinks/legacy/index.html)
+
 | | |
 | --- | --- |
 | **Stack** | React 19, TypeScript, Vite 7, Tailwind CSS 4, React Router 7, Framer Motion |
@@ -142,6 +144,9 @@ rota.
 - O checkout é demonstração: nada é enviado para lugar nenhum e os dados do cartão não saem da página.
 - Não há backend. Catálogo e perfil são dados estáticos.
 - Sem testes automatizados ainda.
+- A cópia publicada da versão antiga carrega sem o `scripts.js` e sem favicon: os caminhos
+  (`../JS/scripts.js` e `IMG/icone.png`) já estavam errados no projeto de 2025. Deixei como estava,
+  já que a proposta do `legacy/` é ser o registro fiel do "antes".
 
 ---
 
@@ -155,7 +160,11 @@ npm run preview  # serve o build
 npm run images   # regenera os WebP a partir de legacy/IMG
 ```
 
-Para ver a versão antiga, abra [`legacy/index.html`](legacy/index.html) direto no navegador.
+Para ver a versão antiga, abra [`legacy/index.html`](legacy/index.html) direto no navegador, ou
+acesse a [cópia publicada](https://lucasbrandaocabral.github.io/Peanut__Drinks/legacy/index.html).
+
+O deploy é automático: todo push na `main` dispara o
+[workflow](.github/workflows/deploy.yml), que builda e publica no GitHub Pages.
 
 ---
 
