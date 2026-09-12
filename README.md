@@ -166,6 +166,10 @@ acesse a [cópia publicada](https://lucasbrandaocabral.github.io/Peanut__Drinks/
 O deploy é automático: todo push na `main` dispara o
 [workflow](.github/workflows/deploy.yml), que builda e publica no GitHub Pages.
 
+> Se você forkar este repositório, ajuste **Settings → Pages → Source** para `GitHub Actions`.
+> Com a opção `Deploy from a branch`, o Pages serve os arquivos crus da branch e o `index.html`
+> do Vite aponta para `/src/main.tsx`, que só existe em desenvolvimento — a página abre em branco.
+
 ---
 
 ## 📁 Estrutura
