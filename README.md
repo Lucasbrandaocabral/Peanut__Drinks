@@ -1,76 +1,207 @@
-## 🚀 Loja de Bebidas - Projeto Pessoal 🍹
+# 🍹 Peanut Drinks
 
-## 🥜 Peanut Drinks
-Projeto pessoal de uma landing page responsiva para uma marca fictícia de bebidas vegetais. Este é meu primeiro projeto criado totalmente do zero, com foco em responsividade e na aplicação das melhores práticas de organização dentro do que conheço sobre arquitetura de sites. Ainda tenho muito a melhorar e continuo aprendendo para aprimorar minhas habilidades.
+Loja fictícia de bebidas, criada como projeto pessoal. Começou em 2025 como um site de HTML, CSS e
+JavaScript puro — meu primeiro projeto feito inteiramente do zero. Em 2026 reescrevi tudo em **React
++ TypeScript**, mantendo a identidade visual original e a versão antiga no repositório para
+comparação.
 
-## 🧠 Motivação
-Esse projeto surgiu como um desafio pessoal para colocar em prática o que venho aprendendo sobre desenvolvimento web. Queria testar minha capacidade de criar uma landing page com HTML, CSS e JavaScript de forma organizada e funcional.
+| | |
+| --- | --- |
+| **Stack** | React 19, TypeScript, Vite 7, Tailwind CSS 4, React Router 7, Framer Motion |
+| **Versão antiga** | HTML5, CSS3, JavaScript — preservada em [`legacy/`](legacy/) |
+| **Design** | [Figma — Peanut Drinks](https://www.figma.com/design/Xt5t3v263oMSjtBRsHMZ7i/Peanut-Drinks--%F0%9F%8D%B9?m=auto&t=f7izsUK4liRlTSH3-6) |
 
-## 📸 Prévia do Projeto
-![Image](https://github.com/user-attachments/assets/7c3122d6-8200-44a9-ab76-ef78b6c12e8d)
+---
 
-## 📁 Estrutura de Pastas
+## 📸 Antes e depois
 
-Peanut Drinks/
+Todas as capturas foram tiradas do mesmo jeito: Chrome a 1280×900, as duas versões rodando
+localmente.
 
-    ├── pages/
-    │    ├── Alcoholic-page.html
-    │    ├── Cart.html
-    │    ├── Magnifying.html
-    │    ├── Order.html
-    │    ├── Payment.html
-    │    ├── Personal information.html
-    │    └── User.html
-    ├── assets/
-    │   ├── css/
-    │   ├── img/
-    │   └── js/
-    ├── index.html
-    └── README.md
-## 📱 Responsividade
-A principal dificuldade que enfrentei foi tornar o layout responsivo para dispositivos móveis. No início, eu estava utilizando muitas margens para posicionar os elementos, o que acabou dificultando a adaptação para diferentes tamanhos de tela. Isso gerava desalinhamentos e espaços inesperados, tornando o design inconsistente. Para corrigir isso, precisei ajustar diversos elementos manualmente com media queries, repensar a hierarquia de alguns componentes e substituir margens excessivas por técnicas mais eficientes, como espaçamentos via flexbox e grid. Esse processo me ensinou bastante sobre a importância de uma estrutura flexível e escalável no desenvolvimento de layouts responsivos.
+### Home
 
-## 🧪 O que aprendi
+| Antes — HTML/CSS/JS | Depois — React |
+| :---: | :---: |
+| ![Home antes](docs/screenshots/home-antes.webp) | ![Home depois](docs/screenshots/home-depois.webp) |
 
-- Organização de estrutura de pastas em projetos web
-- Uso de Flexbox e Grid
-- Implementação básica de responsividade com media queries
-- Separação de responsabilidades entre HTML, CSS e JS
-- Publicação de projeto no GitHub
+A home antiga abria direto na lista de produtos, com os cards cortados na lateral e sem nenhum ponto
+de entrada. A nova tem hero, busca funcional e trilhos horizontais que indicam o que ainda há para
+rolar.
 
-## ⚙️ O que posso melhorar
+### Catálogo
 
-- Melhorar a responsividade para tablets (algumas quebras ainda ocorrem)
-- Implementar variáveis CSS para manter consistência de estilos
-- Criar componentes reutilizáveis com mais clareza (seguindo conceitos de Atomic Design)
-- Automatizar tarefas com ferramenta React
-- Melhorar acessibilidade e semântica HTML
+| Antes | Depois |
+| :---: | :---: |
+| ![Catálogo antes](docs/screenshots/catalogo-antes.webp) | ![Catálogo depois](docs/screenshots/catalogo-depois.webp) |
 
-## 🛠️ Tecnologias Utilizadas
+### Página de produto
 
-- HTML5
-- CSS3
-- JavaScript (se aplicável)
-- Figma (para prototipagem ou inspiração visual)
+| Antes | Depois |
+| :---: | :---: |
+| ![Produto antes](docs/screenshots/produto-antes.webp) | ![Produto depois](docs/screenshots/produto-depois.webp) |
 
+As opções de tamanho e gelo eram `input[type=radio]` soltos, sem efeito nenhum. Agora alimentam o
+item do carrinho e o total é recalculado na hora.
 
-## 🖌 Projeto no Figma - Criado do Zero 🎨
+### Carrinho
 
-Este projeto foi desenvolvido inteiramente do zero no Figma, sem a etapa de wireframe. Desde o início, busquei uma abordagem direta e prática para a concepção do design, focando na criação de uma interface intuitiva e funcional.
+| Antes | Depois |
+| :---: | :---: |
+| ![Carrinho antes](docs/screenshots/carrinho-antes.webp) | ![Carrinho depois](docs/screenshots/carrinho-depois.webp) |
 
-A ideia foi explorar o potencial do Figma para estruturar visualmente o projeto de forma fluida, sem passar pelo processo tradicional de esquematização prévia. Ainda há melhorias a serem feitas, mas cada ajuste faz parte do aprendizado e refinamento do design.
+O carrinho antigo tinha três itens escritos à mão no HTML e o total sumia ao recarregar a página.
+O novo persiste em `localStorage`, calcula frete e some com a linha quando a quantidade chega a zero.
 
-https://www.figma.com/design/Xt5t3v263oMSjtBRsHMZ7i/Peanut-Drinks--%F0%9F%8D%B9?m=auto&t=f7izsUK4liRlTSH3-6
+### Pagamento
 
-## 🙋 Sobre mim
-Sou um entusiasta de desenvolvimento web, iniciando meus primeiros projetos solo. Este é o primeiro de muitos, e estou animado para evoluir e compartilhar meu progresso com a comunidade!
+| Antes | Depois |
+| :---: | :---: |
+| ![Pagamento antes](docs/screenshots/pagamento-antes.webp) | ![Pagamento depois](docs/screenshots/pagamento-depois.webp) |
 
-## Qualquer feedback ou sugestão é bem-vindo! 😃
+### Perfil
 
+| Antes | Depois |
+| :---: | :---: |
+| ![Perfil antes](docs/screenshots/perfil-antes.webp) | ![Perfil depois](docs/screenshots/perfil-depois.webp) |
+
+### Modo escuro e mobile
+
+O tema escuro não existia na versão antiga. No mobile, a barra inferior agora tem rótulo em cada
+ícone e o conteúdo não fica mais escondido atrás dela.
+
+| Tema escuro (novo) | Mobile antes | Mobile depois |
+| :---: | :---: | :---: |
+| ![Tema escuro](docs/screenshots/home-dark.webp) | ![Mobile antes](docs/screenshots/mobile-home-antes.webp) | ![Mobile depois](docs/screenshots/mobile-home-depois.webp) |
+
+---
+
+## 📊 O que mudou, em números
+
+Medido com o Chrome, as duas versões servidas localmente, carregando a home até a rede ficar ociosa:
+
+| | Antes | Depois |
+| --- | ---: | ---: |
+| Peso das imagens do catálogo | 12,3 MB | **0,54 MB** (−96%) |
+| Requisições na home | 39 (17 para CDNs externos) | **36 (3 externos)** |
+| Bytes transferidos na home | 984 KB | **772 KB** |
+| Produtos exibidos na home | 18 | **34** |
+| Arquivos HTML com header/nav/footer copiados | 8 | **0** |
+| Linhas de CSS | 2.551 em 8 arquivos | **130** de tokens + utilitários |
+| Cobertura de tipos | nenhuma | **TypeScript em modo estrito** |
+
+A versão nova mostra quase o dobro de produtos e ainda assim transfere menos bytes. O ganho vem de
+três lugares: conversão das imagens para WebP, remoção dos CDNs de ícones e divisão do JavaScript por
+rota.
+
+---
+
+## 🔧 O que foi reescrito
+
+**Arquitetura**
+- Header, navegação e rodapé eram copiados e colados nos 8 arquivos HTML. Qualquer ajuste no menu
+  significava editar os 8. Hoje são três componentes em [`src/components/layout/`](src/components/layout/).
+- Os produtos estavam escritos direto na marcação — 36 cards em HTML. Agora vivem em
+  [`src/data/products.ts`](src/data/products.ts) e as telas apenas renderizam a lista.
+- Navegação por React Router, com uma rota por tela e `lazy()` em cada página: abrir a home não
+  baixa mais o código do checkout.
+
+**Carrinho**
+- Estado central com `useReducer` + Context ([`src/store/cart.tsx`](src/store/cart.tsx)), persistido
+  em `localStorage`.
+- Preços guardados em centavos (inteiros) para não acumular erro de ponto flutuante na soma — o
+  script antigo fazia `parseFloat` em cima de texto da tela.
+- A mesma bebida em tamanhos diferentes vira duas linhas, em vez de sobrescrever a anterior.
+- O badge de quantidade aparece no ícone do carrinho em qualquer tela.
+
+**Visual**
+- Mesma identidade: creme `#F1EFE7` e League Spartan, agora com âmbar `#C2571F` tirado das próprias
+  fotos dos drinks como cor de destaque.
+- Paleta em variáveis CSS com dois valores por token — é isso que dá o modo escuro quase de graça.
+- Preços com `Intl.NumberFormat('pt-BR')`. A versão antiga misturava `R$5,³²` e `$2,⁸⁹` escrevendo os
+  centavos com caracteres sobrescritos.
+- Animações com Framer Motion, todas respeitando `prefers-reduced-motion`.
+
+**Acessibilidade**
+- O CSS antigo tinha `outline: none` na busca. Agora todo elemento focável tem indicador visível.
+- Link "pular para o conteúdo", `aria-label` nos botões de ícone, `aria-live` nos totais que mudam.
+- Os ícones vinham de um kit particular do Font Awesome carregado por `<script>`. Agora são SVGs do
+  `lucide-react`, no bundle.
+
+**Performance**
+- [`scripts/optimize-images.mjs`](scripts/optimize-images.mjs) converte `legacy/IMG` para WebP em
+  `public/img`, com limite de 1600px de largura. Roda com `npm run images`.
+- `loading="lazy"` em tudo que está abaixo da dobra; `fetchPriority="high"` só no hero.
+
+---
+
+## ⚠️ Limitações conhecidas
+
+- **As fotos originais são pequenas.** 43 das 63 imagens do acervo têm ~117px de largura — elas já
+  eram esticadas no site antigo. Só o Old Fashioned (2400px) e o Aperol Spritz (497px) têm resolução
+  de verdade, por isso o hero usa o Old Fashioned. Trocar os assets é o próximo passo mais útil.
+- O checkout é demonstração: nada é enviado para lugar nenhum e os dados do cartão não saem da página.
+- Não há backend. Catálogo e perfil são dados estáticos.
+- Sem testes automatizados ainda.
+
+---
+
+## 🚀 Rodando o projeto
+
+```bash
+npm install
+npm run dev      # servidor de desenvolvimento
+npm run build    # build de produção
+npm run preview  # serve o build
+npm run images   # regenera os WebP a partir de legacy/IMG
+```
+
+Para ver a versão antiga, abra [`legacy/index.html`](legacy/index.html) direto no navegador.
+
+---
+
+## 📁 Estrutura
+
+```
+.
+├── legacy/                  # versão 2025 em HTML/CSS/JS, intacta
+│   ├── Css/  IMG/  JS/  Pages/
+│   └── index.html
+├── public/img/              # imagens em WebP usadas pelo app
+├── scripts/
+│   └── optimize-images.mjs  # conversão PNG/JPG -> WebP
+├── src/
+│   ├── components/
+│   │   ├── layout/          # Header, NavBar, Footer, AppLayout
+│   │   ├── product/         # ProductCard, ProductRail, CategoryCard
+│   │   └── ui/              # Button, Rating, QuantityStepper, ThemeToggle
+│   ├── data/                # catálogo e categorias
+│   ├── hooks/
+│   ├── lib/                 # formatação de moeda e máscaras de input
+│   ├── pages/               # uma tela por rota
+│   ├── store/               # carrinho e tema
+│   └── types.ts
+└── docs/screenshots/
+```
+
+---
+
+## 🧠 O que aprendi na migração
+
+O trabalho maior não foi aprender React — foi perceber o que o HTML estava escondendo. Enquanto o
+header estava copiado em 8 arquivos, ele parecia simples; só ficou claro que era um componente quando
+precisei mudar o menu e tive que abrir os 8. O mesmo vale para os produtos: eles *pareciam* conteúdo
+até eu tentar ordenar por preço e descobrir que estavam presos na marcação.
+
+A parte que mais mudou de ideia foi o dinheiro. O script antigo lia o preço do texto da tela com
+`parseFloat`, o que funcionava até aparecer um centavo quebrado. Guardar tudo em centavos e formatar
+só na hora de exibir resolveu o cálculo e, de quebra, o `R$`/`$` misturado.
+
+---
 
 ## 📫 Contato
-<p align="left">
-<a href="https://linkedin.com/in/lucasbrandaocabral" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="lucasbrandaocabral" height="30" width="40" /></a>
-<a href="https://instagram.com/zlucas.bz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="zlucas.bz" height="30" width="40" /></a>
-<a href="https://discord.gg/274340417909293058" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="274340417909293058" height="30" width="40" /></a>
-</p>
+
+[LinkedIn](https://linkedin.com/in/lucasbrandaocabral) ·
+[GitHub](https://github.com/Lucasbrandaocabral) ·
+[Instagram](https://instagram.com/zlucas.bz)
+
+Feedback é bem-vindo.

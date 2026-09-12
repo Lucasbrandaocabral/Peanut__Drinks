@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+
+/* Alterna o tema pela classe .dark no <html>, em vez de seguir só o sistema. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* --- Paleta: evolução do creme original (#F1EFE7) --- */
+  --color-cream-50: #faf8f3;
+  --color-cream-100: #f5f2ea;
+  --color-cream-200: #ece7da;
+  --color-cream-300: #ded7c5;
+
+  --color-ink-400: #8b8378;
+  --color-ink-500: #6b6359;
+  --color-ink-700: #3a342d;
+  --color-ink-800: #26221c;
+  --color-ink-900: #191612;
+  --color-ink-950: #100e0b;
+
+  /* Âmbar/terracota puxado das próprias fotos dos drinks. */
+  --color-amber-brand: #c2571f;
+  --color-amber-soft: #e8833c;
+  --color-amber-glow: #f2a65a;
+
+  --font-display: 'League Spartan', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1rem;
+
+  --shadow-soft: 0 1px 2px rgb(25 22 18 / 0.04), 0 8px 24px -12px rgb(25 22 18 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(25 22 18 / 0.06), 0 20px 40px -20px rgb(25 22 18 / 0.28);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* --- Tokens semânticos: um nome por papel, dois valores por tema --- */
+:root {
+  --surface-page: var(--color-cream-100);
+  --surface-raised: #ffffff;
+  --surface-sunken: var(--color-cream-200);
+  --surface-border: var(--color-cream-300);
+  --text-strong: var(--color-ink-900);
+  --text-muted: var(--color-ink-500);
+  --accent: var(--color-amber-brand);
+  --accent-contrast: #ffffff;
+  color-scheme: light;
+}
+
+.dark {
+  --surface-page: var(--color-ink-950);
+  --surface-raised: var(--color-ink-800);
+  --surface-sunken: var(--color-ink-900);
+  --surface-border: #332d26;
+  --text-strong: var(--color-cream-100);
+  --text-muted: var(--color-ink-400);
+  --accent: var(--color-amber-glow);
+  --accent-contrast: var(--color-ink-950);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-page: var(--surface-page);
+  --color-raised: var(--surface-raised);
+  --color-sunken: var(--surface-sunken);
+  --color-line: var(--surface-border);
+  --color-strong: var(--text-strong);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--accent-contrast);
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-page text-strong font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight text-balance;
+  }
+
+  /* Foco visível e consistente — o projeto antigo removia o outline. */
+  :focus-visible {
+    @apply outline-accent outline-2 outline-offset-2;
+  }
+
+  ::selection {
+    @apply bg-accent text-on-accent;
+  }
+}
+
+@layer utilities {
+  /* Carrosséis: some com a barra, mas mantém o scroll por teclado e touch. */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+}
