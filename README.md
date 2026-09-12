@@ -145,8 +145,14 @@ rota.
 - Não há backend. Catálogo e perfil são dados estáticos.
 - Sem testes automatizados ainda.
 - A cópia publicada da versão antiga carrega sem o `scripts.js` e sem favicon: os caminhos
-  (`../JS/scripts.js` e `IMG/icone.png`) já estavam errados no projeto de 2025. Deixei como estava,
-  já que a proposta do `legacy/` é ser o registro fiel do "antes".
+  (`../JS/scripts.js` e `IMG/icone.png`) já estavam errados no projeto de 2025. E em `Cart.html` o
+  `scripts.js` lança `Cannot read properties of null`, porque procura o `#cardNumber` do formulário
+  de pagamento em uma página que não o tem. Deixei os três como estavam, já que a proposta do
+  `legacy/` é ser o registro fiel do "antes".
+- A única coisa acrescentada à `legacy/` foi a faixa de retorno para a versão atual
+  ([`back-to-2026.js`](legacy/back-to-2026.js)): sem ela, quem entra na versão antiga só sai pelo
+  botão voltar do navegador. São duas linhas em cada HTML; todo o resto do código de 2025 está
+  intocado.
 
 ---
 
